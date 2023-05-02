@@ -101,7 +101,7 @@ document.querySelector('#book-form').addEventListener('submit', e => {
   const isbn = document.querySelector('#isbn').value;
 
   // Validate
-  if (title === '' || author === '' || isbn === '') {
+  if (title === '' || author === '') {
     UI.showAlert('Please fill in all fields', 'danger');
   } else {
     // Instatiate book
