@@ -1,6 +1,6 @@
 /*  eslint-disable max-classes-per-file, no-unused-vars */
 
-// Book Class: Represents a Book
+// Book Class: Represents a book
 class Book {
   constructor(title, author, isbn) {
     this.title = title;
@@ -45,7 +45,7 @@ class UI {
   static displayBooks() {
     const books = Store.getBooks();
 
-    books.forEach((book) => UI.addBookToList(book));
+    books.forEach(book => UI.addBookToList(book));
   }
 
   static addBookToList(book) {
@@ -91,7 +91,7 @@ class UI {
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
 // Event: Add a Book
-document.querySelector('#book-form').addEventListener('submit', (e) => {
+document.querySelector('#book-form').addEventListener('submit', e => {
   // Prevent actual submit
   e.preventDefault();
 
@@ -122,7 +122,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
 });
 
 // Event: Remove a Book
-document.querySelector('#book-list').addEventListener('click', (e) => {
+document.querySelector('#book-list').addEventListener('click', e => {
   // Remove book from UI
   UI.deleteBook(e.target);
 
