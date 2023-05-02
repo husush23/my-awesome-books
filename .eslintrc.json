@@ -13,9 +13,7 @@
   "rules": {
     "no-shadow": "off",
     "no-param-reassign": "off",
-    "no-unused-vars": "off",
     "eol-last": "off",
-    "camelcase": ["error", { "properties": "never" }],
     "import/extensions": [
       1,
       {
