@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1>Awesome Books</h1>
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="isbn"></label>
+          <input type="hidden" id="isbn" class="form-control" />
+        </div>
+        <input
+          type="submit"
+          value="Add Book"
+          class="btn btn-primary btn-block"
+        />
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
